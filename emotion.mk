@@ -17,16 +17,10 @@
 
 $(call inherit-product, device/xiaomi/mido/full_mido.mk)
 
-# Magisk
-WITH_ROOT=true
-
-# AudioFX
-WITH_AUDIOFX=true
-
 # Inherit some common DarkNess reDefined stuff.
-$(call inherit-product, vendor/dnd/config/common_full_phone.mk)
+$(call inherit-product, vendor/emotion/configs/common_full_phone.mk)
 
-PRODUCT_NAME := dnd_mido
+PRODUCT_NAME := emotion_mido
 BOARD_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
